@@ -1,0 +1,296 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+body {
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 0px 10px;
+}
+
+header {
+  height: 8%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: -1;
+  opacity: 90%;
+}
+
+#musicplayer {
+  width: 350px;
+  height: 30px;
+  opacity: 0.7;
+  transition: all 0.8s;
+}
+
+#musicplayer:hover {
+  opacity: 1;
+}
+
+.musicname {
+  display: inline-block;
+  margin-left: 5px;
+  width: 340px;
+  overflow: hidden;
+}
+
+.musicname div {
+  white-space: nowrap;
+  animation: moveText 15s linear infinite;
+}
+.musicname span {
+  color: rgba(214, 212, 212);
+}
+
+@keyframes moveText {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/*날씨*/
+
+#weather {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#weather span {
+  font-size: 23px;
+}
+
+#weather i {
+  margin: 0px 20px 0px 5px;
+  font-size: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+/*시간날짜*/
+#datetime-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#date {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 350;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  padding-top: 30px;
+  margin-bottom: -5px;
+}
+
+#clock {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 73px;
+  color: white;
+  text-align: center;
+  margin-top: -10px;
+}
+
+/*로그인창*/
+#login-form {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 320;
+  width: 100%;
+  text-align: center;
+  margin-top: -30px;
+}
+#login-form input {
+  padding: 10px 30px;
+  border-radius: 40px;
+  background-color: rgba(108, 107, 107, 0.3);
+  outline: none;
+  border: none;
+  font-size: 25px;
+  color: white;
+
+  margin-bottom: 5px;
+}
+
+#login-form input:hover {
+  background-color: rgba(89, 88, 88, 0.4);
+}
+
+#login-form input::placeholder {
+  color: white;
+  text-align: center;
+}
+
+.login-form__submit {
+  cursor: pointer;
+}
+
+#greeting {
+  font-family: "Roboto Slab", serif;
+  font-weight: 600;
+  color: #ffffff;
+  width: 100%;
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: -5px;
+  margin-top: -50px;
+}
+
+/*로그아웃창*/
+#logout-form {
+  text-align: center;
+}
+
+#logout-form input {
+  font-family: "Roboto Slab", serif;
+  font-weight: 600;
+  padding: 3px 20px;
+  border-radius: 50px;
+  background-color: rgba(108, 107, 107, 0.3);
+  outline: none;
+  border: none;
+  font-size: 16px;
+  color: white;
+}
+
+#logout-form input:hover {
+  background-color: rgba(210, 205, 205, 0.4);
+  cursor: pointer;
+}
+
+/*투두리스트 창*/
+
+#todo-container {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+}
+
+#todo-container__column {
+  background-color: rgba(3, 3, 3, 0.3);
+  width: 550px;
+  height: 400px;
+  border-radius: 35px;
+}
+
+#todo-form {
+  padding: 20px;
+  margin-bottom: -15px;
+}
+
+#todo-form input {
+  border-radius: 45px;
+  background-color: rgba(229, 226, 226, 0.5);
+  outline: none;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.4);
+  padding: 7px 3px;
+  width: 100%;
+  text-indent: 10px;
+}
+
+#todo-form input:hover {
+  background-color: rgba(229, 226, 226, 0.6);
+}
+
+#todo-form input::placeholder {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+#todo-list {
+  padding: 0px 23px;
+}
+
+#todo-list li {
+  margin-bottom: 20px;
+  margin-left: 20px;
+  position: relative;
+}
+
+#todo-list span {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+}
+
+.custom-button-1 {
+  color: rgb(101, 168, 34);
+  text-align: center;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  position: absolute;
+  right: 30px;
+}
+
+.custom-button-2 {
+  color: rgb(237, 30, 30);
+  text-align: center;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+}
+
+.custom-button-1:hover {
+  background-color: rgba(255, 255, 255, 0.836);
+}
+.completed {
+  text-decoration: line-through solid;
+  text-decoration-color: rgb(254, 113, 88);
+  color: rgb(241, 236, 236);
+}
+
+/*명대사*/
+
+#quote {
+  position: absolute;
+  left: 0;
+  bottom: 1px;
+  width: 100%;
+  text-align: center;
+}
+
+#quote div {
+  padding: 15px 0;
+  background-color: rgba(3, 3, 3, 0.3);
+}
+
+#quote div span:first-child {
+  display: block;
+  font-size: 22px;
+  letter-spacing: 1px;
+  margin-bottom: 3px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+
+  font-style: italic;
+}
+#quote div span:last-child {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 16.5px;
+  display: block;
+  color: rgb(219, 225, 96);
+}

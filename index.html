@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/78bb3f38c4.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Todo-List</title>
+  </head>
+  <body>
+    <header>
+      <audio
+        id="musicplayer"
+        controls="controls"
+        autoplay="autoplay"
+        loop="loop"
+        onloadstart="this.volume=0.4"
+      >
+        <source src="audio/get better.mp4" />
+        Your browser does not support the audio element.
+      </audio>
+      <div id="weather">
+        <span></span>
+        <i class="description-icon"></i>
+        <span></span>
+      </div>
+    </header>
+    <main>
+      <div class="musicname">
+        <div>
+          <span>Music: get better-Eden Elf, Ren Avel</span>
+        </div>
+      </div>
+      <div id="cdatetime-container">
+        <h3 id="date">00.00.00</h3>
+        <h2 id="clock">00:00:00</h2>
+      </div>
+
+      <form id="login-form" class="hidden">
+        <input
+          required
+          maxlength="15"
+          type="text"
+          placeholder="what is your name?"
+        />
+        <input type="submit" value="Log In" class="login-form__submit" />
+      </form>
+      <h1 id="greeting" class="hidden"></h1>
+
+      <div id="todo-container">
+        <div id="todo-container__column" class="hidden">
+          <form id="todo-form">
+            <input
+              type="text"
+              placeholder="Write a To Do and Press Enter"
+              required
+            />
+          </form>
+          <ul id="todo-list"></ul>
+        </div>
+      </div>
+    </main>
+
+    <div id="quote">
+      <div>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+
+    <form id="logout-form" class="hidden">
+      <input type="submit" value="Log out" />
+    </form>
+
+    <script src="js/greetings.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+  </body>
+</html>
