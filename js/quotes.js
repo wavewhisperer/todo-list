@@ -27,7 +27,7 @@ const quotes = [
   },
   {
     quote:
-      "If you don't know where ou want to go, then it doesn't matter which path you take.",
+      "If you don't know where you want to go, then it doesn't matter which path you take.",
     author:
       "네가 어디로 가고 싶은지 모른다는건, 어떤 길이든 선택할 수 있다는 뜻이잖아. -《이상한 나라의 앨리스》",
   },
